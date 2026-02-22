@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getAuthUrl } from '@/lib/instagram/oauth'
 import { cookies } from 'next/headers'
 
+export const dynamic = 'force-dynamic'
+
 /**
  * Initiate Instagram OAuth flow
  * Redirects user to Instagram authorization page
