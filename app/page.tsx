@@ -34,7 +34,12 @@ export default function AuthPage() {
             const data = await response.json()
 
             if (response.ok) {
-                router.push("/dashboard")
+                if (isLogin) {
+                    router.push("/dashboard")
+                } else {
+                    alert("Conta criada com sucesso! Por favor, faça login com sua nova conta.")
+                    setIsLogin(true)
+                }
             } else {
                 // Show detailed error message
                 const errorMsg = data.details ? `${data.error}: ${data.details}` : data.error
