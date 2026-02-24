@@ -1,0 +1,172 @@
+﻿node.exe : Vercel CLI 
+50.22.1
+No linha:1 caractere:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Vercel CLI 50   
+ .22.1:String) [],     
+RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+
+  Ôû▓ vercel env add 
+name [environment] 
+[options]
+
+  Add an Environment 
+Variable (see examples 
+below)                 
+             
+
+  Options:
+
+       --force      
+Force overwrites when 
+a command would 
+normally fail          
+    
+       --guidance   
+Receive command 
+suggestions once 
+command is complete    
+         
+       --sensitive  
+Add a sensitive 
+Environment Variable   
+                       
+   
+  -y,  --yes        
+Skip the confirmation 
+prompt when adding an 
+Environment Variable 
+
+
+  Global Options:
+
+       --cwd <DIR>     
+       Sets the 
+current working 
+directory for a single 
+  
+                       
+       run of a 
+command                
+                  
+  -d,  --debug         
+       Debug mode 
+(default off)          
+                
+  -Q,  --global-config 
+<DIR>  Path to the 
+global `.vercel` 
+directory            
+  -h,  --help          
+       Output usage 
+information            
+              
+  -A,  --local-config 
+<FILE>  Path to the 
+local `vercel.json` 
+file              
+       --no-color      
+       No color mode 
+(default off)          
+             
+       
+--non-interactive      
+Run without 
+interactive prompts; 
+when an agent is 
+                       
+       detected this 
+is the default         
+             
+  -S,  --scope         
+       Set a custom 
+scope                  
+              
+  -t,  --token <TOKEN> 
+       Login token     
+                       
+           
+  -v,  --version       
+       Output the 
+version number         
+                
+
+
+  Examples:
+
+  - Add a new variable 
+to all Environments
+
+    $ vercel env add 
+<name>
+    $ vercel env add 
+API_TOKEN
+
+  - Add a new 
+Environment Variable 
+to a specific 
+Environment
+
+    $ vercel env add 
+<name> <production | 
+preview | development>
+    $ vercel env add 
+DB_PASS production
+
+  - Override an 
+existing Environment 
+Variable of same 
+target (production, 
+preview, deployment)
+
+    $ vercel env add 
+API_TOKEN --force
+
+  - Add a sensitive 
+Environment Variable
+
+    $ vercel env add 
+API_TOKEN --sensitive
+
+  - Add a new 
+Environment Variable 
+for a specific 
+Environment and Git 
+Branch
+
+    $ vercel env add 
+<name> <production | 
+preview | development> 
+<git-branch>
+    $ vercel env add 
+DB_PASS preview feat1
+
+  - Add a new 
+Environment Variable 
+from stdin
+
+    $ cat <file> | 
+vercel env add <name> 
+<production | preview 
+| development>
+    $ cat ~/.npmrc | 
+vercel env add NPM_RC 
+preview
+    $ vercel env add 
+API_URL production < 
+url.txt
+

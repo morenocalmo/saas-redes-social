@@ -1,0 +1,314 @@
+﻿Adding PRISMA_DATABASE_URL to Vercel...
+node : Vercel CLI 
+50.22.1
+No linha:1 
+caractere:145
++ ... :GetEnvironmentVa
+riable("PATH","User"); 
+node push_env.js 2>&1 
+| Out-F ...
++                      
+                       
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Vercel CLI 50   
+ .22.1:String) [],     
+RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+PRISMA_DATABASE_URL to 
+Project upsubly [331ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+PRISMA_DATABASE_URL to 
+Project upsubly [343ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+PRISMA_DATABASE_URL to 
+Project upsubly [702ms]
+Adding DIRECT_URL to Vercel...
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable DIRECT_URL to 
+Project upsubly [289ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable DIRECT_URL to 
+Project upsubly [629ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable DIRECT_URL to 
+Project upsubly [784ms]
+Adding NEXT_PUBLIC_SUPABASE_URL to Vercel...
+Vercel CLI 50.22.1
+WARN! NEXT_PUBLIC_ 
+variables can be seen 
+by anyone visiting 
+your site
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable NEXT_PUBLIC_SU
+PABASE_URL to Project 
+upsubly [258ms]
+Vercel CLI 50.22.1
+WARN! NEXT_PUBLIC_ 
+variables can be seen 
+by anyone visiting 
+your site
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable NEXT_PUBLIC_SU
+PABASE_URL to Project 
+upsubly [826ms]
+Vercel CLI 50.22.1
+WARN! NEXT_PUBLIC_ 
+variables can be seen 
+by anyone visiting 
+your site
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable NEXT_PUBLIC_SU
+PABASE_URL to Project 
+upsubly [759ms]
+Adding NEXT_PUBLIC_SUPABASE_ANON_KEY to Vercel...
+Vercel CLI 50.22.1
+WARN! The NEXT_PUBLIC_ 
+prefix will make 
+SUPABASE_ANON_KEY 
+visible to anyone 
+visiting your site
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable NEXT_PUBLIC_SU
+PABASE_ANON_KEY to 
+Project upsubly [393ms]
+Vercel CLI 50.22.1
+WARN! The NEXT_PUBLIC_ 
+prefix will make 
+SUPABASE_ANON_KEY 
+visible to anyone 
+visiting your site
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable NEXT_PUBLIC_SU
+PABASE_ANON_KEY to 
+Project upsubly [619ms]
+Vercel CLI 50.22.1
+WARN! The NEXT_PUBLIC_ 
+prefix will make 
+SUPABASE_ANON_KEY 
+visible to anyone 
+visiting your site
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable NEXT_PUBLIC_SU
+PABASE_ANON_KEY to 
+Project upsubly [291ms]
+Adding SUPABASE_SERVICE_ROLE_KEY to Vercel...
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable SUPABASE_SERVI
+CE_ROLE_KEY to Project 
+upsubly [279ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable SUPABASE_SERVI
+CE_ROLE_KEY to Project 
+upsubly [353ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable SUPABASE_SERVI
+CE_ROLE_KEY to Project 
+upsubly [279ms]
+Adding NEXTAUTH_URL to Vercel...
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable NEXTAUTH_URL 
+to Project upsubly 
+[347ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable NEXTAUTH_URL 
+to Project upsubly 
+[802ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable NEXTAUTH_URL 
+to Project upsubly 
+[298ms]
+Adding NEXTAUTH_SECRET to Vercel...
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+NEXTAUTH_SECRET to 
+Project upsubly [675ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+NEXTAUTH_SECRET to 
+Project upsubly [285ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+NEXTAUTH_SECRET to 
+Project upsubly [357ms]
+Adding INSTAGRAM_APP_ID to Vercel...
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+INSTAGRAM_APP_ID to 
+Project upsubly [427ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+INSTAGRAM_APP_ID to 
+Project upsubly [814ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+INSTAGRAM_APP_ID to 
+Project upsubly [291ms]
+Adding INSTAGRAM_APP_SECRET to Vercel...
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+INSTAGRAM_APP_SECRET 
+to Project upsubly 
+[708ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+INSTAGRAM_APP_SECRET 
+to Project upsubly 
+[716ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+INSTAGRAM_APP_SECRET 
+to Project upsubly 
+[329ms]
+Adding INSTAGRAM_REDIRECT_URI to Vercel...
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+INSTAGRAM_REDIRECT_URI 
+to Project upsubly 
+[698ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+INSTAGRAM_REDIRECT_URI 
+to Project upsubly 
+[330ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+INSTAGRAM_REDIRECT_URI 
+to Project upsubly 
+[336ms]
+Adding INSTAGRAM_WEBHOOK_VERIFY_TOKEN to Vercel...
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable INSTAGRAM_WEBH
+OOK_VERIFY_TOKEN to 
+Project upsubly [283ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable INSTAGRAM_WEBH
+OOK_VERIFY_TOKEN to 
+Project upsubly [362ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable INSTAGRAM_WEBH
+OOK_VERIFY_TOKEN to 
+Project upsubly [317ms]
+Adding ENCRYPTION_KEY to Vercel...
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+ENCRYPTION_KEY to 
+Project upsubly [813ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+ENCRYPTION_KEY to 
+Project upsubly [271ms]
+Vercel CLI 50.22.1
+Retrieving projectÔÇª
+Saving
+Added Environment 
+Variable 
+ENCRYPTION_KEY to 
+Project upsubly [291ms]
+All variables pushed successfully.

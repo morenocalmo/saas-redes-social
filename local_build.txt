@@ -1,0 +1,109 @@
+﻿
+> exclusivelink-saas@1.0.0 build
+> next build
+
+  Ôû▓ Next.js 14.2.15
+  - Environments: .env
+
+   Creating an optimized production build ...
+ Ô£ô Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+node.exe : Error: 
+DATABASE_URL is not 
+defined. Please check 
+your .env file.
+No linha:1 caractere:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Error: DATABA   
+ SE...your .env fil    
+e.:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+Expected format: DATABA
+SE_URL="postgresql://us
+er:password@host:5432/d
+atabase"
+    at 1035 (C:\Users\e
+mill\Downloads\APP_YURI
+\saas-redes-socias\.nex
+t\server\app\api\instag
+ram\callback\route.js:1
+:2936)
+    at t (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\webpack-runtime.j
+s:1:127)
+    at 6910 (C:\Users\e
+mill\Downloads\APP_YURI
+\saas-redes-socias\.nex
+t\server\app\api\instag
+ram\callback\route.js:1
+:2455)
+    at t (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\webpack-runtime.j
+s:1:127)
+    at 6141 (C:\Users\e
+mill\Downloads\APP_YURI
+\saas-redes-socias\.nex
+t\server\app\api\instag
+ram\callback\route.js:1
+:855)
+    at t (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\webpack-runtime.j
+s:1:127)
+    at r (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\instagram
+\callback\route.js:1:60
+60)
+    at C:\Users\emill\D
+ownloads\APP_YURI\saas-
+redes-socias\.next\serv
+er\app\api\instagram\ca
+llback\route.js:1:6095
+    at t.X (C:\Users\em
+ill\Downloads\APP_YURI\
+saas-redes-socias\.next
+\server\webpack-runtime
+.js:1:1191)
+    at C:\Users\emill\D
+ownloads\APP_YURI\saas-
+redes-socias\.next\serv
+er\app\api\instagram\ca
+llback\route.js:1:6073
+
+> Build error occurred
+Error: Failed to 
+collect page data for 
+/api/instagram/callback
+    at C:\Users\emill\D
+ownloads\APP_YURI\saas-
+redes-socias\node_modul
+es\next\dist\build\util
+s.js:1268:15
+    at process.processT
+icksAndRejections (node
+:internal/process/task_
+queues:103:5) {
+  type: 'Error'
+}

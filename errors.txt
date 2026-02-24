@@ -1,0 +1,2 @@
+app/automation/[id]/page.tsx(9,24): error TS2307: Cannot find module '@/components/ui/switch' or its corresponding type declarations.
+app/automation/new/page.tsx(9,24): error TS2307: Cannot find module '@/components/ui/switch' or its corresponding type declarations.

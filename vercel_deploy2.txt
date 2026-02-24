@@ -1,0 +1,1366 @@
+﻿node.exe : Vercel CLI 
+50.22.1
+No linha:1 caractere:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Vercel CLI 50   
+ .22.1:String) [],     
+RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+Retrieving projectÔÇª
+Deploying morenocalmos-
+projects/upsubly
+Uploading 
+[--------------------] 
+(0.0B/2.4MB)
+Uploading 
+[=====---------------] 
+(616.9KB/2.4MB)
+Uploading 
+[==========----------] 
+(1.2MB/2.4MB)
+Uploading 
+[===============-----] 
+(1.8MB/2.4MB)
+Uploading 
+[====================] 
+(2.4MB/2.4MB)
+Inspect: https://vercel
+.com/morenocalmos-proje
+cts/upsubly/33b7nZpPyPG
+YxBhkFhYZ1tJB5uu7 [5s]
+Production: https://ups
+ubly-jnnrut1el-morenoca
+lmos-projects.vercel.ap
+p [5s]
+Building...
+Building: Running 
+build in Washington, 
+D.C., USA (East) ÔÇô 
+iad1
+Building: Build 
+machine configuration: 
+2 cores, 8 GB
+Building: Retrieving 
+list of deployment 
+files...
+Building: Downloading 
+289 deployment files...
+Building: Restored 
+build cache from 
+previous deployment (6Z
+RgTjXHe5wwqsgnm4AG8AMnH
+zGJ)
+Building: Running 
+"vercel build"
+Building: Vercel CLI 
+50.22.0
+Building: Installing 
+dependencies...
+Building: Installing 
+dependencies...
+Building: > exclusiveli
+nk-saas@1.0.0 
+postinstall
+Building: > prisma 
+generate
+Building: Environment 
+variables loaded from 
+.env
+Building: Prisma 
+schema loaded from 
+prisma/schema.prisma
+Building: Ô£ö 
+Generated Prisma 
+Client (v5.22.0) to ./n
+ode_modules/@prisma/cli
+ent in 227ms
+Building: Start by 
+importing your Prisma 
+Client (See: https://pr
+is.ly/d/importing-clien
+t)
+Building: Tip: Want to 
+turn off tips and 
+other hints? https://pr
+is.ly/tip-4-nohints
+Building: up to date 
+in 2s
+Building: 156 packages 
+are looking for funding
+Building: run `npm 
+fund` for details
+Building: Detected 
+Next.js version: 
+14.2.15
+Building: Running "npm 
+run build"
+Building: > exclusiveli
+nk-saas@1.0.0 build
+Building: > next build
+Building: Ôû▓ Next.js 
+14.2.15
+Building: - 
+Environments: .env
+Building: Creating an 
+optimized production 
+build ...
+Building: Ô£ô Compiled 
+successfully
+Building: Linting and 
+checking validity of 
+types ...
+Building: Collecting 
+page data ...
+Building: Generating 
+static pages (0/22) ...
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route /ap
+i/instagram/callback 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at m (/vercel
+/path0/.next/server/app
+/api/instagram/callback
+/route.js:1:945)
+Building: at /vercel/pa
+th0/node_modules/next/d
+ist/compiled/next-serve
+r/app-route.runtime.pro
+d.js:6:36963
+Building: at /vercel/pa
+th0/node_modules/next/d
+ist/server/lib/trace/tr
+acer.js:140:36
+Building: at NoopContex
+tManager.with (/vercel/
+path0/node_modules/next
+/dist/compiled/@opentel
+emetry/api/index.js:1:7
+062)
+Building: at 
+ContextAPI.with (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/@opent
+elemetry/api/index.js:1
+:518)
+Building: at NoopTracer
+.startActiveSpan (/verc
+el/path0/node_modules/n
+ext/dist/compiled/@open
+telemetry/api/index.js:
+1:18093)
+Building: at ProxyTrace
+r.startActiveSpan (/ver
+cel/path0/node_modules/
+next/dist/compiled/@ope
+ntelemetry/api/index.js
+:1:18854) {
+Building: description: 
+"Route /api/instagram/c
+allback couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Instagram 
+OAuth callback error: 
+B [Error]: Dynamic 
+server usage: Route /ap
+i/instagram/callback 
+couldn't be rendered 
+statically because it 
+used `request.url`. 
+See more info here: htt
+ps://nextjs.org/docs/me
+ssages/dynamic-server-e
+rror
+Building: at V (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-route.runtime.
+prod.js:6:21777)
+Building: at 
+Object.get (/vercel/pat
+h0/node_modules/next/di
+st/compiled/next-server
+/app-route.runtime.prod
+.js:6:29137)
+Building: at m (/vercel
+/path0/.next/server/app
+/api/instagram/callback
+/route.js:1:999)
+Building: at async /ver
+cel/path0/node_modules/
+next/dist/compiled/next
+-server/app-route.runti
+me.prod.js:6:36957
+Building: at async 
+eC.execute (/vercel/pat
+h0/node_modules/next/di
+st/compiled/next-server
+/app-route.runtime.prod
+.js:6:27552)
+Building: at async 
+eC.handle (/vercel/path
+0/node_modules/next/dis
+t/compiled/next-server/
+app-route.runtime.prod.
+js:6:38291)
+Building: at async 
+exportAppRoute (/vercel
+/path0/node_modules/nex
+t/dist/export/routes/ap
+p-route.js:77:26)
+Building: at async 
+exportPageImpl (/vercel
+/path0/node_modules/nex
+t/dist/export/worker.js
+:175:20)
+Building: at async 
+Span.traceAsyncFn (/ver
+cel/path0/node_modules/
+next/dist/trace/trace.j
+s:154:20)
+Building: at async 
+Object.exportPage (/ver
+cel/path0/node_modules/
+next/dist/export/worker
+.js:236:20) {
+Building: description: 
+"Route /api/instagram/c
+allback couldn't be 
+rendered statically 
+because it used 
+`request.url`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Generating 
+static pages (5/22)
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route /ap
+i/instagram/permissions
+ couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at l (/vercel
+/path0/.next/server/app
+/api/instagram/permissi
+ons/route.js:1:935)
+Building: at /vercel/pa
+th0/node_modules/next/d
+ist/compiled/next-serve
+r/app-route.runtime.pro
+d.js:6:36963
+Building: at /vercel/pa
+th0/node_modules/next/d
+ist/server/lib/trace/tr
+acer.js:140:36
+Building: at NoopContex
+tManager.with (/vercel/
+path0/node_modules/next
+/dist/compiled/@opentel
+emetry/api/index.js:1:7
+062)
+Building: at 
+ContextAPI.with (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/@opent
+elemetry/api/index.js:1
+:518)
+Building: at NoopTracer
+.startActiveSpan (/verc
+el/path0/node_modules/n
+ext/dist/compiled/@open
+telemetry/api/index.js:
+1:18093)
+Building: at ProxyTrace
+r.startActiveSpan (/ver
+cel/path0/node_modules/
+next/dist/compiled/@ope
+ntelemetry/api/index.js
+:1:18854) {
+Building: description: 
+"Route /api/instagram/p
+ermissions couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route 
+/api/profile couldn't 
+be rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at l (/vercel
+/path0/.next/server/app
+/api/profile/route.js:1
+:888)
+Building: at /vercel/pa
+th0/node_modules/next/d
+ist/compiled/next-serve
+r/app-route.runtime.pro
+d.js:6:36963
+Building: at /vercel/pa
+th0/node_modules/next/d
+ist/server/lib/trace/tr
+acer.js:140:36
+Building: at NoopContex
+tManager.with (/vercel/
+path0/node_modules/next
+/dist/compiled/@opentel
+emetry/api/index.js:1:7
+062)
+Building: at 
+ContextAPI.with (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/@opent
+elemetry/api/index.js:1
+:518)
+Building: at NoopTracer
+.startActiveSpan (/verc
+el/path0/node_modules/n
+ext/dist/compiled/@open
+telemetry/api/index.js:
+1:18093)
+Building: at ProxyTrace
+r.startActiveSpan (/ver
+cel/path0/node_modules/
+next/dist/compiled/@ope
+ntelemetry/api/index.js
+:1:18854) {
+Building: description: 
+"Route /api/profile 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Generating 
+static pages (10/22)
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route /au
+tomation/integration 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at f (/vercel
+/path0/.next/server/app
+/automation/integration
+/page.js:1:3978)
+Building: at eh (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:134657)
+Building: at e (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-page.runtime.p
+rod.js:12:137542)
+Building: at ek (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:138016)
+Building: at 
+Array.toJSON (/vercel/p
+ath0/node_modules/next/
+dist/compiled/next-serv
+er/app-page.runtime.pro
+d.js:12:135626)
+Building: at stringify 
+(<anonymous>)
+Building: at eP (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:142090) {
+Building: description: 
+"Route /automation/inte
+gration couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route /au
+tomation/integration 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at f (/vercel
+/path0/.next/server/app
+/automation/integration
+/page.js:1:3978)
+Building: at eh (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:134657)
+Building: at e (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-page.runtime.p
+rod.js:12:137542)
+Building: at ek (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:138016)
+Building: at 
+Array.toJSON (/vercel/p
+ath0/node_modules/next/
+dist/compiled/next-serv
+er/app-page.runtime.pro
+d.js:12:135626)
+Building: at stringify 
+(<anonymous>)
+Building: at eP (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:142090) {
+Building: description: 
+"Route /automation/inte
+gration couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route 
+/automation couldn't 
+be rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at h (/vercel
+/path0/.next/server/app
+/automation/page.js:1:2
+448)
+Building: at eh (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:134657)
+Building: at e (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-page.runtime.p
+rod.js:12:137542)
+Building: at ek (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:138016)
+Building: at 
+Array.toJSON (/vercel/p
+ath0/node_modules/next/
+dist/compiled/next-serv
+er/app-page.runtime.pro
+d.js:12:135626)
+Building: at stringify 
+(<anonymous>)
+Building: at eP (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:142090) {
+Building: description: 
+"Route /automation 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route 
+/automation couldn't 
+be rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at h (/vercel
+/path0/.next/server/app
+/automation/page.js:1:2
+448)
+Building: at eh (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:134657)
+Building: at e (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-page.runtime.p
+rod.js:12:137542)
+Building: at ek (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:138016)
+Building: at 
+Array.toJSON (/vercel/p
+ath0/node_modules/next/
+dist/compiled/next-serv
+er/app-page.runtime.pro
+d.js:12:135626)
+Building: at stringify 
+(<anonymous>)
+Building: at eP (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:142090) {
+Building: description: 
+"Route /automation 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route 
+/dashboard couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at v (/vercel
+/path0/.next/server/app
+/dashboard/page.js:1:26
+61)
+Building: at eh (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:134657)
+Building: at e (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-page.runtime.p
+rod.js:12:137542)
+Building: at ek (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:138016)
+Building: at 
+Array.toJSON (/vercel/p
+ath0/node_modules/next/
+dist/compiled/next-serv
+er/app-page.runtime.pro
+d.js:12:135626)
+Building: at stringify 
+(<anonymous>)
+Building: at eP (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:142090) {
+Building: description: 
+"Route /dashboard 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route 
+/dashboard couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at v (/vercel
+/path0/.next/server/app
+/dashboard/page.js:1:26
+61)
+Building: at eh (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:134657)
+Building: at e (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-page.runtime.p
+rod.js:12:137542)
+Building: at ek (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:138016)
+Building: at 
+Array.toJSON (/vercel/p
+ath0/node_modules/next/
+dist/compiled/next-serv
+er/app-page.runtime.pro
+d.js:12:135626)
+Building: at stringify 
+(<anonymous>)
+Building: at eP (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:142090) {
+Building: description: 
+"Route /dashboard 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Generating 
+static pages (16/22)
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route 
+/materials couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at g (/vercel
+/path0/.next/server/app
+/materials/page.js:1:30
+94)
+Building: at eh (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:134657)
+Building: at e (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-page.runtime.p
+rod.js:12:137542)
+Building: at ek (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:138016)
+Building: at 
+Array.toJSON (/vercel/p
+ath0/node_modules/next/
+dist/compiled/next-serv
+er/app-page.runtime.pro
+d.js:12:135626)
+Building: at stringify 
+(<anonymous>)
+Building: at eP (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:142090) {
+Building: description: 
+"Route /materials 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route 
+/materials couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at g (/vercel
+/path0/.next/server/app
+/materials/page.js:1:30
+94)
+Building: at eh (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:134657)
+Building: at e (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-page.runtime.p
+rod.js:12:137542)
+Building: at ek (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:138016)
+Building: at 
+Array.toJSON (/vercel/p
+ath0/node_modules/next/
+dist/compiled/next-serv
+er/app-page.runtime.pro
+d.js:12:135626)
+Building: at stringify 
+(<anonymous>)
+Building: at eP (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:142090) {
+Building: description: 
+"Route /materials 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route 
+/subscription couldn't 
+be rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at p (/vercel
+/path0/.next/server/app
+/subscription/page.js:1
+:1987)
+Building: at eh (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:134657)
+Building: at e (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-page.runtime.p
+rod.js:12:137542)
+Building: at ek (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:138016)
+Building: at 
+Array.toJSON (/vercel/p
+ath0/node_modules/next/
+dist/compiled/next-serv
+er/app-page.runtime.pro
+d.js:12:135626)
+Building: at stringify 
+(<anonymous>)
+Building: at eP (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:142090) {
+Building: description: 
+"Route /subscription 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route 
+/subscription couldn't 
+be rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at p (/vercel
+/path0/.next/server/app
+/subscription/page.js:1
+:1987)
+Building: at eh (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:134657)
+Building: at e (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-page.runtime.p
+rod.js:12:137542)
+Building: at ek (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:138016)
+Building: at 
+Array.toJSON (/vercel/p
+ath0/node_modules/next/
+dist/compiled/next-serv
+er/app-page.runtime.pro
+d.js:12:135626)
+Building: at stringify 
+(<anonymous>)
+Building: at eP (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:142090) {
+Building: description: 
+"Route /subscription 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route 
+/verifications 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at c (/vercel
+/path0/.next/server/app
+/verifications/page.js:
+1:22069)
+Building: at eh (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:134657)
+Building: at e (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-page.runtime.p
+rod.js:12:137542)
+Building: at ek (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:138016)
+Building: at 
+Array.toJSON (/vercel/p
+ath0/node_modules/next/
+dist/compiled/next-serv
+er/app-page.runtime.pro
+d.js:12:135626)
+Building: at stringify 
+(<anonymous>)
+Building: at eP (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:142090) {
+Building: description: 
+"Route /verifications 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route 
+/verifications 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+Building: at l (/vercel
+/path0/.next/server/chu
+nks/787.js:1:37140)
+Building: at f (/vercel
+/path0/.next/server/chu
+nks/845.js:1:1676)
+Building: at s (/vercel
+/path0/.next/server/app
+/api/automation/route.j
+s:1:2675)
+Building: at c (/vercel
+/path0/.next/server/app
+/verifications/page.js:
+1:22069)
+Building: at eh (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:134657)
+Building: at e (/vercel
+/path0/node_modules/nex
+t/dist/compiled/next-se
+rver/app-page.runtime.p
+rod.js:12:137542)
+Building: at ek (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:138016)
+Building: at 
+Array.toJSON (/vercel/p
+ath0/node_modules/next/
+dist/compiled/next-serv
+er/app-page.runtime.pro
+d.js:12:135626)
+Building: at stringify 
+(<anonymous>)
+Building: at eP (/verce
+l/path0/node_modules/ne
+xt/dist/compiled/next-s
+erver/app-page.runtime.
+prod.js:12:142090) {
+Building: description: 
+"Route /verifications 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+Building: digest: 
+'DYNAMIC_SERVER_USAGE'
+Building: }
+Building: Ô£ô 
+Generating static 
+pages (22/22)
+Building: Finalizing 
+page optimization ...
+Building: Collecting 
+build traces ...
+Building: Route (app)  
+                       
+     Size     First 
+Load JS
+Building: Ôöî Ôùï /    
+                       
+         3.02 kB       
+  100 kB
+Building: Ôö£ Ôùï 
+/_not-found            
+              873 B    
+      88.5 kB
+Building: Ôö£ ãÆ 
+/api/auth/login        
+              0 B      
+          0 B
+Building: Ôö£ ãÆ 
+/api/auth/logout       
+              0 B      
+          0 B
+Building: Ôö£ ãÆ 
+/api/auth/register     
+              0 B      
+          0 B
+Building: Ôö£ ãÆ 
+/api/automation        
+              0 B      
+          0 B
+Building: Ôö£ ãÆ 
+/api/instagram/auth    
+              0 B      
+          0 B
+Building: Ôö£ ãÆ /api/i
+nstagram/callback      
+        0 B            
+    0 B
+Building: Ôö£ ãÆ /api/i
+nstagram/disconnect    
+        0 B            
+    0 B
+Building: Ôö£ ãÆ /api/i
+nstagram/permissions   
+        0 B            
+    0 B
+Building: Ôö£ ãÆ 
+/api/instagram/webhook 
+              0 B      
+          0 B
+Building: Ôö£ ãÆ 
+/api/materials         
+              0 B      
+          0 B
+Building: Ôö£ ãÆ 
+/api/profile           
+              0 B      
+          0 B
+Building: Ôö£ ãÆ 
+/api/redeem            
+              0 B      
+          0 B
+Building: Ôö£ ãÆ 
+/api/upload            
+              0 B      
+          0 B
+Building: Ôö£ ãÆ /api/v
+erifications/[id]/appro
+ve      0 B            
+    0 B
+Building: Ôö£ ãÆ /api/v
+erifications/[id]/rejec
+t       0 B            
+    0 B
+Building: Ôö£ ãÆ 
+/automation            
+              142 B    
+       107 kB
+Building: Ôö£ ãÆ /autom
+ation/integration      
+        3.35 kB        
+ 108 kB
+Building: Ôö£ Ôùï 
+/automation/new        
+              4.56 kB  
+       109 kB
+Building: Ôö£ ãÆ 
+/dashboard             
+              142 B    
+       107 kB
+Building: Ôö£ ãÆ 
+/materials             
+              141 B    
+       107 kB
+Building: Ôö£ Ôùï 
+/materials/new         
+              3.29 kB  
+       107 kB
+Building: Ôö£ Ôùï 
+/settings/profile      
+              3.08 kB  
+       107 kB
+Building: Ôö£ ãÆ 
+/subscription          
+              2.89 kB  
+       107 kB
+Building: Ôö£ ãÆ 
+/u/[username]          
+              174 B    
+      94.6 kB
+Building: Ôö£ ãÆ /u/[us
+ername]/material/[id]  
+        3.48 kB        
+ 108 kB
+Building: Ôöö ãÆ 
+/verifications         
+              9.79 kB  
+       114 kB
+Building: + First Load 
+JS shared by all       
+     87.6 kB
+Building: Ôö£ chunks/11
+7-b33ac20651b1eec8.js  
+     31.6 kB
+Building: Ôö£ chunks/fd
+9d1056-6112771300644ab6
+.js  53.6 kB
+Building: Ôöö other 
+shared chunks (total)  
+        2.38 kB
+Building: Ôùï  
+(Static)   prerendered 
+as static content
+Building: ãÆ  
+(Dynamic)  
+server-rendered on 
+demand
+Building: Traced 
+Next.js server files 
+in: 30.933ms
+Building: Created all 
+serverless functions 
+in: 215.532ms
+Building: Collected 
+static files (public/, 
+static/, 
+.next/static): 11.117ms
+Building: Build 
+Completed in 
+/vercel/output [23s]
+Building: Deploying 
+outputs...
+[2K[1A[2K[GProducti
+on: https://upsubly-jnn
+rut1el-morenocalmos-pro
+jects.vercel.app [2m]
+Completing...
+Aliased: https://upsubl
+y-six.vercel.app [2m]
+https://upsubly-jnnrut1el-morenocalmos-projects.vercel.app

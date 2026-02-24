@@ -70,12 +70,14 @@ export async function GET(request: NextRequest) {
         return NextResponse.redirect(
             new URL('/automation/integration?success=true', request.url)
         )
-    } catch (error) {
+    } catch (error: any) {
         console.error('Instagram OAuth callback error:', error)
 
-        // Redirect with error
-        return NextResponse.redirect(
-            new URL('/automation/integration?error=oauth_failed', request.url)
-        )
+        // Return error directly for debugging (TEMPORARY)
+        return NextResponse.json({
+            error: 'OAUTH_FAILED',
+            message: error?.message || String(error),
+            stack: error?.stack
+        }, { status: 500 })
     }
 }

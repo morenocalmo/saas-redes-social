@@ -61,12 +61,12 @@ export default async function AutomationPage() {
                         </p>
                     </div>
                     {integration && (
-                        <Link href="/automation/new">
-                            <Button className="gradient-primary border-0 text-white">
+                        <Button asChild className="gradient-primary border-0 text-white">
+                            <Link href="/automation/new">
                                 <Plus className="mr-2 h-4 w-4" />
                                 Nova Automação
-                            </Button>
-                        </Link>
+                            </Link>
+                        </Button>
                     )}
                 </div>
 
@@ -83,12 +83,12 @@ export default async function AutomationPage() {
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <Link href="/automation/integration">
-                                <Button className="gradient-primary border-0 text-white">
+                            <Button asChild className="gradient-primary border-0 text-white">
+                                <Link href="/automation/integration">
                                     <Instagram className="mr-2 h-4 w-4" />
                                     Conectar Agora
-                                </Button>
-                            </Link>
+                                </Link>
+                            </Button>
                         </CardContent>
                     </Card>
                 ) : (
@@ -107,11 +107,11 @@ export default async function AutomationPage() {
                                         </p>
                                     </div>
                                 </div>
-                                <Link href="/automation/integration">
-                                    <Button variant="outline" size="sm">
+                                <Button asChild variant="outline" size="sm">
+                                    <Link href="/automation/integration">
                                         Gerenciar
-                                    </Button>
-                                </Link>
+                                    </Link>
+                                </Button>
                             </CardContent>
                         </Card>
 
@@ -124,12 +124,12 @@ export default async function AutomationPage() {
                                     <p className="text-muted-foreground text-center max-w-md mb-6">
                                         Crie sua primeira automação para começar a interagir automaticamente com seus seguidores
                                     </p>
-                                    <Link href="/automation/new">
-                                        <Button className="gradient-primary border-0 text-white">
+                                    <Button asChild className="gradient-primary border-0 text-white">
+                                        <Link href="/automation/new">
                                             <Plus className="mr-2 h-4 w-4" />
                                             Criar Primeira Automação
-                                        </Button>
-                                    </Link>
+                                        </Link>
+                                    </Button>
                                 </CardContent>
                             </Card>
                         ) : (
@@ -151,11 +151,11 @@ export default async function AutomationPage() {
                                             </CardDescription>
                                         </CardHeader>
                                         <CardContent>
-                                            <Link href={`/automation/${automation.id}`}>
-                                                <Button variant="outline" className="w-full">
+                                            <Button asChild variant="outline" className="w-full">
+                                                <Link href={`/automation/${automation.id}`}>
                                                     Editar Automação
-                                                </Button>
-                                            </Link>
+                                                </Link>
+                                            </Button>
                                         </CardContent>
                                     </Card>
                                 ))}

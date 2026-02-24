@@ -1,0 +1,1369 @@
+﻿
+> exclusivelink-saas@1.0.0 build
+> next build
+
+  Ôû▓ Next.js 14.2.15
+  - Environments: .env
+
+   Creating an optimized production build ...
+ Ô£ô Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/22) ...
+node.exe : Error 
+getting current user: 
+n [Error]: Dynamic 
+server usage: Route 
+/api/profile couldn't 
+be rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+No linha:1 caractere:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Error getting   
+  c...ic-server-err    
+or:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at s (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\instagram
+\callback\route.js:1:25
+11)
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\profile\r
+oute.js:1:888)
+    at C:\Users\emill\D
+ownloads\APP_YURI\saas-
+redes-socias\node_modul
+es\next\dist\compiled\n
+ext-server\app-route.ru
+ntime.prod.js:6:36963
+    at C:\Users\emill\D
+ownloads\APP_YURI\saas-
+redes-socias\node_modul
+es\next\dist\server\lib
+\trace\tracer.js:140:36
+    at NoopContextManag
+er.with (C:\Users\emill
+\Downloads\APP_YURI\saa
+s-redes-socias\node_mod
+ules\next\dist\compiled
+\@opentelemetry\api\ind
+ex.js:1:7062)
+    at ContextAPI.with 
+(C:\Users\emill\Downloa
+ds\APP_YURI\saas-redes-
+socias\node_modules\nex
+t\dist\compiled\@opente
+lemetry\api\index.js:1:
+518)
+    at NoopTracer.start
+ActiveSpan (C:\Users\em
+ill\Downloads\APP_YURI\
+saas-redes-socias\node_
+modules\next\dist\compi
+led\@opentelemetry\api\
+index.js:1:18093)
+    at ProxyTracer.star
+tActiveSpan (C:\Users\e
+mill\Downloads\APP_YURI
+\saas-redes-socias\node
+_modules\next\dist\comp
+iled\@opentelemetry\api
+\index.js:1:18854) {
+  description: "Route 
+/api/profile couldn't 
+be rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /api/instagram/pe
+rmissions couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at s (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\automatio
+n\route.js:1:2721)
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\instagram
+\permissions\route.js:1
+:935)
+    at C:\Users\emill\D
+ownloads\APP_YURI\saas-
+redes-socias\node_modul
+es\next\dist\compiled\n
+ext-server\app-route.ru
+ntime.prod.js:6:36963
+    at C:\Users\emill\D
+ownloads\APP_YURI\saas-
+redes-socias\node_modul
+es\next\dist\server\lib
+\trace\tracer.js:140:36
+    at NoopContextManag
+er.with (C:\Users\emill
+\Downloads\APP_YURI\saa
+s-redes-socias\node_mod
+ules\next\dist\compiled
+\@opentelemetry\api\ind
+ex.js:1:7062)
+    at ContextAPI.with 
+(C:\Users\emill\Downloa
+ds\APP_YURI\saas-redes-
+socias\node_modules\nex
+t\dist\compiled\@opente
+lemetry\api\index.js:1:
+518)
+    at NoopTracer.start
+ActiveSpan (C:\Users\em
+ill\Downloads\APP_YURI\
+saas-redes-socias\node_
+modules\next\dist\compi
+led\@opentelemetry\api\
+index.js:1:18093)
+    at ProxyTracer.star
+tActiveSpan (C:\Users\e
+mill\Downloads\APP_YURI
+\saas-redes-socias\node
+_modules\next\dist\comp
+iled\@opentelemetry\api
+\index.js:1:18854) {
+  description: "Route /
+api/instagram/permissio
+ns couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /api/instagram/ca
+llback couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at n (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\instagram
+\permissions\route.js:1
+:2609)
+    at m (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\instagram
+\callback\route.js:1:94
+6)
+    at C:\Users\emill\D
+ownloads\APP_YURI\saas-
+redes-socias\node_modul
+es\next\dist\compiled\n
+ext-server\app-route.ru
+ntime.prod.js:6:36963
+    at C:\Users\emill\D
+ownloads\APP_YURI\saas-
+redes-socias\node_modul
+es\next\dist\server\lib
+\trace\tracer.js:140:36
+    at NoopContextManag
+er.with (C:\Users\emill
+\Downloads\APP_YURI\saa
+s-redes-socias\node_mod
+ules\next\dist\compiled
+\@opentelemetry\api\ind
+ex.js:1:7062)
+    at ContextAPI.with 
+(C:\Users\emill\Downloa
+ds\APP_YURI\saas-redes-
+socias\node_modules\nex
+t\dist\compiled\@opente
+lemetry\api\index.js:1:
+518)
+    at NoopTracer.start
+ActiveSpan (C:\Users\em
+ill\Downloads\APP_YURI\
+saas-redes-socias\node_
+modules\next\dist\compi
+led\@opentelemetry\api\
+index.js:1:18093)
+    at ProxyTracer.star
+tActiveSpan (C:\Users\e
+mill\Downloads\APP_YURI
+\saas-redes-socias\node
+_modules\next\dist\comp
+iled\@opentelemetry\api
+\index.js:1:18854) {
+  description: "Route /
+api/instagram/callback 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Instagram OAuth 
+callback error: B 
+[Error]: Dynamic 
+server usage: Route /ap
+i/instagram/callback 
+couldn't be rendered 
+statically because it 
+used `request.url`. 
+See more info here: htt
+ps://nextjs.org/docs/me
+ssages/dynamic-server-e
+rror
+    at V (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-route
+.runtime.prod.js:6:2177
+7)
+    at Object.get (C:\U
+sers\emill\Downloads\AP
+P_YURI\saas-redes-socia
+s\node_modules\next\dis
+t\compiled\next-server\
+app-route.runtime.prod.
+js:6:29137)
+    at m (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\instagram
+\callback\route.js:1:10
+00)
+    at async C:\Users\e
+mill\Downloads\APP_YURI
+\saas-redes-socias\node
+_modules\next\dist\comp
+iled\next-server\app-ro
+ute.runtime.prod.js:6:3
+6957
+    at async 
+eC.execute (C:\Users\em
+ill\Downloads\APP_YURI\
+saas-redes-socias\node_
+modules\next\dist\compi
+led\next-server\app-rou
+te.runtime.prod.js:6:27
+552)
+    at async eC.handle 
+(C:\Users\emill\Downloa
+ds\APP_YURI\saas-redes-
+socias\node_modules\nex
+t\dist\compiled\next-se
+rver\app-route.runtime.
+prod.js:6:38291)
+    at async 
+exportAppRoute (C:\User
+s\emill\Downloads\APP_Y
+URI\saas-redes-socias\n
+ode_modules\next\dist\e
+xport\routes\app-route.
+js:77:26)
+    at async 
+exportPageImpl (C:\User
+s\emill\Downloads\APP_Y
+URI\saas-redes-socias\n
+ode_modules\next\dist\e
+xport\worker.js:175:20)
+    at async 
+Span.traceAsyncFn (C:\U
+sers\emill\Downloads\AP
+P_YURI\saas-redes-socia
+s\node_modules\next\dis
+t\trace\trace.js:154:20
+)
+    at async 
+Object.exportPage (C:\U
+sers\emill\Downloads\AP
+P_YURI\saas-redes-socia
+s\node_modules\next\dis
+t\export\worker.js:236:
+20) {
+  description: "Route /
+api/instagram/callback 
+couldn't be rendered 
+statically because it 
+used `request.url`. 
+See more info here: htt
+ps://nextjs.org/docs/me
+ssages/dynamic-server-e
+rror",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+   Generating static pages (5/22) 
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /verifications 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at o (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\profile\r
+oute.js:1:2361)
+    at c (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\verifications
+\page.js:1:22245)
+    at eh (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:134
+657)
+    at e (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-page.
+runtime.prod.js:12:1375
+42)
+    at ek (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:138
+016)
+    at Array.toJSON (C:
+\Users\emill\Downloads\
+APP_YURI\saas-redes-soc
+ias\node_modules\next\d
+ist\compiled\next-serve
+r\app-page.runtime.prod
+.js:12:135626)
+    at stringify 
+(<anonymous>)
+    at eP (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:142
+090) {
+  description: "Route 
+/verifications 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /verifications 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at o (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\profile\r
+oute.js:1:2361)
+    at c (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\verifications
+\page.js:1:22245)
+    at eh (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:134
+657)
+    at e (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-page.
+runtime.prod.js:12:1375
+42)
+    at ek (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:138
+016)
+    at Array.toJSON (C:
+\Users\emill\Downloads\
+APP_YURI\saas-redes-soc
+ias\node_modules\next\d
+ist\compiled\next-serve
+r\app-page.runtime.prod
+.js:12:135626)
+    at stringify 
+(<anonymous>)
+    at eP (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:142
+090) {
+  description: "Route 
+/verifications 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /automation 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at i (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\49.js:1:98
+31)
+    at h (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\automation\pa
+ge.js:1:2585)
+    at eh (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:134
+657)
+    at e (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-page.
+runtime.prod.js:12:1375
+42)
+    at ek (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:138
+016)
+    at Array.toJSON (C:
+\Users\emill\Downloads\
+APP_YURI\saas-redes-soc
+ias\node_modules\next\d
+ist\compiled\next-serve
+r\app-page.runtime.prod
+.js:12:135626)
+    at stringify 
+(<anonymous>)
+    at eP (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:142
+090) {
+  description: "Route 
+/automation couldn't 
+be rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /automation 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at i (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\49.js:1:98
+31)
+    at h (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\automation\pa
+ge.js:1:2585)
+    at eh (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:134
+657)
+    at e (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-page.
+runtime.prod.js:12:1375
+42)
+    at ek (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:138
+016)
+    at Array.toJSON (C:
+\Users\emill\Downloads\
+APP_YURI\saas-redes-soc
+ias\node_modules\next\d
+ist\compiled\next-serve
+r\app-page.runtime.prod
+.js:12:135626)
+    at stringify 
+(<anonymous>)
+    at eP (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:142
+090) {
+  description: "Route 
+/automation couldn't 
+be rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /subscription 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at i (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\49.js:1:98
+31)
+    at p (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\subscription\
+page.js:1:2124)
+    at eh (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:134
+657)
+    at e (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-page.
+runtime.prod.js:12:1375
+42)
+    at ek (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:138
+016)
+    at Array.toJSON (C:
+\Users\emill\Downloads\
+APP_YURI\saas-redes-soc
+ias\node_modules\next\d
+ist\compiled\next-serve
+r\app-page.runtime.prod
+.js:12:135626)
+    at stringify 
+(<anonymous>)
+    at eP (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:142
+090) {
+  description: "Route 
+/subscription couldn't 
+be rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /subscription 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at i (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\49.js:1:98
+31)
+    at p (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\subscription\
+page.js:1:2124)
+    at eh (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:134
+657)
+    at e (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-page.
+runtime.prod.js:12:1375
+42)
+    at ek (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:138
+016)
+    at Array.toJSON (C:
+\Users\emill\Downloads\
+APP_YURI\saas-redes-soc
+ias\node_modules\next\d
+ist\compiled\next-serve
+r\app-page.runtime.prod
+.js:12:135626)
+    at stringify 
+(<anonymous>)
+    at eP (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:142
+090) {
+  description: "Route 
+/subscription couldn't 
+be rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /materials 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at n (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\instagram
+\permissions\route.js:1
+:2609)
+    at g (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\materials\pag
+e.js:1:3231)
+    at eh (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:134
+657)
+    at e (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-page.
+runtime.prod.js:12:1375
+42)
+    at ek (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:138
+016)
+    at Array.toJSON (C:
+\Users\emill\Downloads\
+APP_YURI\saas-redes-soc
+ias\node_modules\next\d
+ist\compiled\next-serve
+r\app-page.runtime.prod
+.js:12:135626)
+    at stringify 
+(<anonymous>)
+    at eP (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:142
+090) {
+  description: "Route 
+/materials couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /materials 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at n (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\instagram
+\permissions\route.js:1
+:2609)
+    at g (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\materials\pag
+e.js:1:3231)
+    at eh (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:134
+657)
+    at e (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-page.
+runtime.prod.js:12:1375
+42)
+    at ek (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:138
+016)
+    at Array.toJSON (C:
+\Users\emill\Downloads\
+APP_YURI\saas-redes-soc
+ias\node_modules\next\d
+ist\compiled\next-serve
+r\app-page.runtime.prod
+.js:12:135626)
+    at stringify 
+(<anonymous>)
+    at eP (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:142
+090) {
+  description: "Route 
+/materials couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /automation/integ
+ration couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at i (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\verificat
+ions\[id]\approve\route
+.js:1:2297)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\automation\in
+tegration\page.js:1:419
+3)
+    at eh (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:134
+657)
+    at e (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-page.
+runtime.prod.js:12:1375
+42)
+    at ek (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:138
+016)
+    at Array.toJSON (C:
+\Users\emill\Downloads\
+APP_YURI\saas-redes-soc
+ias\node_modules\next\d
+ist\compiled\next-serve
+r\app-page.runtime.prod
+.js:12:135626)
+    at stringify 
+(<anonymous>)
+    at eP (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:142
+090) {
+  description: "Route /
+automation/integration 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /automation/integ
+ration couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at i (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\verificat
+ions\[id]\approve\route
+.js:1:2297)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\automation\in
+tegration\page.js:1:419
+3)
+    at eh (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:134
+657)
+    at e (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-page.
+runtime.prod.js:12:1375
+42)
+    at ek (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:138
+016)
+    at Array.toJSON (C:
+\Users\emill\Downloads\
+APP_YURI\saas-redes-soc
+ias\node_modules\next\d
+ist\compiled\next-serve
+r\app-page.runtime.prod
+.js:12:135626)
+    at stringify 
+(<anonymous>)
+   Generating static pages (10/22) 
+    at eP (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:142
+090) {
+  description: "Route /
+automation/integration 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+   Generating static pages (16/22) 
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /dashboard 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at s (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\instagram
+\callback\route.js:1:25
+11)
+    at v (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\dashboard\pag
+e.js:1:2799)
+    at eh (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:134
+657)
+    at e (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-page.
+runtime.prod.js:12:1375
+42)
+    at ek (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:138
+016)
+    at Array.toJSON (C:
+\Users\emill\Downloads\
+APP_YURI\saas-redes-soc
+ias\node_modules\next\d
+ist\compiled\next-serve
+r\app-page.runtime.prod
+.js:12:135626)
+    at stringify 
+(<anonymous>)
+    at eP (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:142
+090) {
+  description: "Route 
+/dashboard couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+Error getting current 
+user: n [Error]: 
+Dynamic server usage: 
+Route /dashboard 
+couldn't be rendered 
+statically because it 
+used `cookies`. See 
+more info here: https:/
+/nextjs.org/docs/messag
+es/dynamic-server-error
+    at l (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\787.js:1:3
+7140)
+    at f (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\chunks\845.js:1:1
+676)
+    at s (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\api\instagram
+\callback\route.js:1:25
+11)
+    at v (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\.next\s
+erver\app\dashboard\pag
+e.js:1:2799)
+    at eh (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:134
+657)
+    at e (C:\Users\emil
+l\Downloads\APP_YURI\sa
+as-redes-socias\node_mo
+dules\next\dist\compile
+d\next-server\app-page.
+runtime.prod.js:12:1375
+42)
+    at ek (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:138
+016)
+    at Array.toJSON (C:
+\Users\emill\Downloads\
+APP_YURI\saas-redes-soc
+ias\node_modules\next\d
+ist\compiled\next-serve
+r\app-page.runtime.prod
+.js:12:135626)
+    at stringify 
+(<anonymous>)
+    at eP (C:\Users\emi
+ll\Downloads\APP_YURI\s
+aas-redes-socias\node_m
+odules\next\dist\compil
+ed\next-server\app-page
+.runtime.prod.js:12:142
+090) {
+  description: "Route 
+/dashboard couldn't be 
+rendered statically 
+because it used 
+`cookies`. See more 
+info here: https://next
+js.org/docs/messages/dy
+namic-server-error",
+  digest: 
+'DYNAMIC_SERVER_USAGE'
+}
+ Ô£ô Generating static pages (22/22)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+Ôöî Ôùï /                                    2.97 kB         100 kB
+Ôö£ Ôùï /_not-found                          873 B          88.5 kB
+Ôö£ ãÆ /api/auth/login                      0 B                0 B
+Ôö£ ãÆ /api/auth/logout                     0 B                0 B
+Ôö£ ãÆ /api/auth/register                   0 B                0 B
+Ôö£ ãÆ /api/automation                      0 B                0 B
+Ôö£ ãÆ /api/instagram/auth                  0 B                0 B
+Ôö£ ãÆ /api/instagram/callback              0 B                0 B
+Ôö£ ãÆ /api/instagram/disconnect            0 B                0 B
+Ôö£ ãÆ /api/instagram/permissions           0 B                0 B
+Ôö£ ãÆ /api/instagram/webhook               0 B                0 B
+Ôö£ ãÆ /api/materials                       0 B                0 B
+Ôö£ ãÆ /api/profile                         0 B                0 B
+Ôö£ ãÆ /api/redeem                          0 B                0 B
+Ôö£ ãÆ /api/upload                          0 B                0 B
+Ôö£ ãÆ /api/verifications/[id]/approve      0 B                0 B
+Ôö£ ãÆ /api/verifications/[id]/reject       0 B                0 B
+Ôö£ ãÆ /automation                          142 B           107 kB
+Ôö£ ãÆ /automation/integration              3.35 kB         108 kB
+Ôö£ Ôùï /automation/new                      4.56 kB         109 kB
+Ôö£ ãÆ /dashboard                           141 B           107 kB
+Ôö£ ãÆ /materials                           141 B           107 kB
+Ôö£ Ôùï /materials/new                       3.29 kB         107 kB
+Ôö£ Ôùï /settings/profile                    3.08 kB         107 kB
+Ôö£ ãÆ /subscription                        2.89 kB         107 kB
+Ôö£ ãÆ /u/[username]                        175 B          94.6 kB
+Ôö£ ãÆ /u/[username]/material/[id]          3.48 kB         108 kB
+Ôöö ãÆ /verifications                       9.79 kB         114 kB
++ First Load JS shared by all            87.6 kB
+  Ôö£ chunks/117-b33ac20651b1eec8.js       31.6 kB
+  Ôö£ chunks/fd9d1056-6112771300644ab6.js  53.6 kB
+  Ôöö other shared chunks (total)          2.38 kB
+
+
+Ôùï  (Static)   prerendered as static content
+ãÆ  (Dynamic)  server-rendered on demand
+

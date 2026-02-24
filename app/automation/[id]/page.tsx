@@ -1,19 +1,22 @@
 "use client"
 
-import { useState } from "react"
-import { useRouter } from "next/navigation"
+import { useState, useEffect } from "react"
+import { useRouter, useParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Switch } from "@/components/ui/switch"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowLeft, Save, Link as LinkIcon, Plus } from "lucide-react"
+import { Card } from "@/components/ui/card"
+import { ArrowLeft, Save, Link as LinkIcon } from "lucide-react"
 import Link from "next/link"
 import { MobilePreview } from "@/components/automation/MobilePreview"
 
-export default function NewAutomationPage() {
+export default function EditAutomationPage() {
     const router = useRouter()
+    const { id: automationId } = useParams()
+
+    const [isLoading, setIsLoading] = useState(true)
     const [name, setName] = useState("")
 
     // Manychat-style state
@@ -27,6 +30,50 @@ export default function NewAutomationPage() {
     const [proEmails, setProEmails] = useState(false)
 
     const [isSaving, setIsSaving] = useState(false)
+
+    useEffect(() => {
+        const fetchAutomation = async () => {
+            try {
+                const response = await fetch(`/api/automation/${automationId}`)
+                if (response.ok) {
+                    const data = await response.json()
+                    const automation = data.automation
+
+                    setName(automation.name)
+
+                    if (automation.flowData) {
+                        const parsedData = typeof automation.flowData === 'string'
+                            ? JSON.parse(automation.flowData)
+                            : automation.flowData
+
+                        if (parsedData.type === 'linear') {
+                            setTriggerKeywords(parsedData.keywords?.join(", ") || "")
+                            setResponseMessage(parsedData.responseMessage || "")
+                            setResponseLink(parsedData.responseLink || "")
+                            setProFollowUp(parsedData.proFeatures?.followUp || false)
+                            setProFollowers(parsedData.proFeatures?.followers || false)
+                            setProEmails(parsedData.proFeatures?.emails || false)
+                        } else {
+                            // Fallback for old reactflow data
+                            setResponseMessage("Atenção: Esta automação foi migrada do editor antigo. Por favor, reconfigure a sua mensagem.")
+                        }
+                    }
+                } else {
+                    alert("Erro ao carregar automação")
+                    router.push("/automation")
+                }
+            } catch (error) {
+                console.error("Failed to load automation", error)
+                alert("Erro ao carregar automação")
+            } finally {
+                setIsLoading(false)
+            }
+        }
+
+        if (automationId) {
+            fetchAutomation()
+        }
+    }, [automationId, router])
 
     const keywordsArray = triggerKeywords
         .split(",")
@@ -56,18 +103,18 @@ export default function NewAutomationPage() {
         }
 
         try {
-            const response = await fetch("/api/automation", {
-                method: "POST",
+            const response = await fetch(`/api/automation/${automationId}`, {
+                method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     name,
-                    trigger: "DM_KEYWORD", // Fixed trigger for this linear mode
+                    trigger: "DM_KEYWORD",
                     flowData,
                 }),
             })
 
             if (response.ok) {
-                alert("Automação salva com sucesso!")
+                alert("Automação atualizada com sucesso!")
                 router.push("/automation")
             } else {
                 const data = await response.json()
@@ -78,6 +125,10 @@ export default function NewAutomationPage() {
         } finally {
             setIsSaving(false)
         }
+    }
+
+    if (isLoading) {
+        return <div className="min-h-screen flex items-center justify-center">Carregando automação...</div>
     }
 
     return (

@@ -1,0 +1,22 @@
+﻿node.exe : Vercel CLI 50.22.1
+No linha:1 caractere:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: (Vercel CL  
+  I 50.22.1:String) [], Rem   
+ oteException
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+Fetching deployment "upsubly" 
+in morenocalmos-projects
+Error: Can't find the 
+deployment "upsubly" under 
+the context 
+"morenocalmos-projects"

@@ -29,11 +29,11 @@ export function getAuthUrl(): string {
     const params = new URLSearchParams({
         client_id: appId,
         redirect_uri: redirectUri,
-        scope: 'instagram_basic,instagram_manage_comments,instagram_manage_messages,pages_show_list',
+        scope: 'instagram_basic,instagram_manage_comments,instagram_manage_messages,pages_show_list,pages_read_engagement,business_management',
         response_type: 'code',
     })
 
-    // Use Facebook Login for Business endpoint (Meta deprecated api.instagram.com/oauth/authorize)
+    // Use Facebook Login for Business endpoint
     return `https://www.facebook.com/dialog/oauth?${params.toString()}`
 }
 
@@ -51,18 +51,15 @@ export async function exchangeCodeForToken(code: string): Promise<TokenResponse>
         throw new Error('Instagram OAuth credentials not configured')
     }
 
-    const response = await fetch('https://api.instagram.com/oauth/access_token', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams({
-            client_id: appId,
-            client_secret: appSecret,
-            grant_type: 'authorization_code',
-            redirect_uri: redirectUri,
-            code,
-        }),
+    const params = new URLSearchParams({
+        client_id: appId,
+        redirect_uri: redirectUri,
+        client_secret: appSecret,
+        code,
+    })
+
+    const response = await fetch(`https://graph.facebook.com/v19.0/oauth/access_token?${params.toString()}`, {
+        method: 'GET',
     })
 
     if (!response.ok) {
@@ -70,7 +67,12 @@ export async function exchangeCodeForToken(code: string): Promise<TokenResponse>
         throw new Error(`Failed to exchange code for token: ${error}`)
     }
 
-    return response.json()
+    // Graph API access token response does not return user_id, it returns { access_token, token_type, expires_in }
+    const data = await response.json()
+    return {
+        ...data,
+        user_id: 0, // Placeholder, actual ID is fetched later
+    }
 }
 
 /**
@@ -79,19 +81,21 @@ export async function exchangeCodeForToken(code: string): Promise<TokenResponse>
  * @returns Long-lived token data
  */
 export async function getLongLivedToken(shortLivedToken: string): Promise<LongLivedTokenResponse> {
+    const appId = process.env.INSTAGRAM_APP_ID
     const appSecret = process.env.INSTAGRAM_APP_SECRET
 
-    if (!appSecret) {
-        throw new Error('Instagram app secret not configured')
+    if (!appId || !appSecret) {
+        throw new Error('Instagram app credentials not configured')
     }
 
     const params = new URLSearchParams({
-        grant_type: 'ig_exchange_token',
+        grant_type: 'fb_exchange_token',
+        client_id: appId,
         client_secret: appSecret,
-        access_token: shortLivedToken,
+        fb_exchange_token: shortLivedToken,
     })
 
-    const response = await fetch(`https://graph.instagram.com/access_token?${params.toString()}`)
+    const response = await fetch(`https://graph.facebook.com/v19.0/oauth/access_token?${params.toString()}`)
 
     if (!response.ok) {
         const error = await response.text()
@@ -108,11 +112,14 @@ export async function getLongLivedToken(shortLivedToken: string): Promise<LongLi
  */
 export async function refreshLongLivedToken(longLivedToken: string): Promise<LongLivedTokenResponse> {
     const params = new URLSearchParams({
-        grant_type: 'ig_refresh_token',
-        access_token: longLivedToken,
+        grant_type: 'fb_exchange_token',
+        fb_exchange_token: longLivedToken,
     })
 
-    const response = await fetch(`https://graph.instagram.com/refresh_access_token?${params.toString()}`)
+    // Note: Facebook user access tokens (which is what we get via FB Login) 
+    // are typically not refreshed this way; they are normally renewed by sending the user through the login flow again.
+    // However, if it's a page token, it doesn't expire as long as the user token is valid.
+    const response = await fetch(`https://graph.facebook.com/v19.0/oauth/access_token?${params.toString()}`)
 
     if (!response.ok) {
         const error = await response.text()
