@@ -13,21 +13,15 @@ export async function GET(
             return NextResponse.json({ error: "Não autorizado" }, { status: 401 })
         }
 
-        const automation = await prisma.automation.findUnique({
+        const automation = await prisma.automation.findFirst({
             where: {
                 id: params.id,
-            },
-            include: {
-                integration: true
+                userId: user.id
             }
         })
 
         if (!automation) {
             return NextResponse.json({ error: "Automação não encontrada" }, { status: 404 })
-        }
-
-        if (automation.integration.userId !== user.id) {
-            return NextResponse.json({ error: "Não autorizado" }, { status: 403 })
         }
 
         return NextResponse.json({ automation })
@@ -49,36 +43,69 @@ export async function PUT(
         }
 
         const body = await request.json()
-        const { name, trigger, flowData } = body
+        const { name, trigger, flowData, isActive } = body
 
-        if (!name || !trigger || !flowData) {
-            return NextResponse.json(
-                { error: "Nome, gatilho e fluxo são obrigatórios" },
-                { status: 400 }
-            )
-        }
-
-        const automation = await prisma.automation.findUnique({
-            where: { id: params.id },
-            include: { integration: true }
-        })
-
-        if (!automation || automation.integration.userId !== user.id) {
-            return NextResponse.json({ error: "Não autorizado" }, { status: 403 })
-        }
-
-        const updatedAutomation = await prisma.automation.update({
-            where: { id: params.id },
-            data: {
-                name,
-                trigger,
-                flowData
+        // Verify ownership
+        const existingAutomation = await prisma.automation.findFirst({
+            where: {
+                id: params.id,
+                userId: user.id
             }
         })
 
-        return NextResponse.json({ automation: updatedAutomation })
+        if (!existingAutomation) {
+            return NextResponse.json({ error: "Automação não encontrada" }, { status: 404 })
+        }
+
+        // Update automation
+        const automation = await prisma.automation.update({
+            where: { id: params.id },
+            data: {
+                ...(name && { name }),
+                ...(trigger && { trigger }),
+                ...(flowData && { flowData }),
+                ...(isActive !== undefined && { isActive })
+            }
+        })
+
+        return NextResponse.json({ automation })
     } catch (error) {
         console.error("Error updating automation:", error)
         return NextResponse.json({ error: "Erro ao atualizar automação" }, { status: 500 })
+    }
+}
+
+export async function DELETE(
+    request: NextRequest,
+    { params }: { params: { id: string } }
+) {
+    try {
+        const user = await getCurrentUser()
+
+        if (!user) {
+            return NextResponse.json({ error: "Não autorizado" }, { status: 401 })
+        }
+
+        // Verify ownership
+        const existingAutomation = await prisma.automation.findFirst({
+            where: {
+                id: params.id,
+                userId: user.id
+            }
+        })
+
+        if (!existingAutomation) {
+            return NextResponse.json({ error: "Automação não encontrada" }, { status: 404 })
+        }
+
+        // Delete automation
+        await prisma.automation.delete({
+            where: { id: params.id }
+        })
+
+        return NextResponse.json({ success: true })
+    } catch (error) {
+        console.error("Error deleting automation:", error)
+        return NextResponse.json({ error: "Erro ao deletar automação" }, { status: 500 })
     }
 }

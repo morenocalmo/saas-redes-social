@@ -23,10 +23,10 @@ model User {
   subscriptionExpiresAt DateTime?
   createdAt             DateTime              @default(now())
   updatedAt             DateTime              @updatedAt
-  instagramIntegration  InstagramIntegration?
   materials             Material[]
   subscription          Subscription?
   videoMaterials        VideoMaterial[]
+  automations           Automation[]
 
   @@map("users")
 }
@@ -96,24 +96,9 @@ model Subscription {
   @@map("subscriptions")
 }
 
-model InstagramIntegration {
-  id              String       @id @default(cuid())
-  userId          String       @unique
-  instagramUserId String
-  accessToken     String
-  pageId          String?
-  isActive        Boolean      @default(true)
-  createdAt       DateTime     @default(now())
-  updatedAt       DateTime     @updatedAt
-  automations     Automation[]
-  user            User         @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@map("instagram_integrations")
-}
-
 model Automation {
   id            String                @id @default(cuid())
-  integrationId String
+  userId        String
   name          String
   trigger       String
   isActive      Boolean               @default(true)
@@ -121,7 +106,7 @@ model Automation {
   createdAt     DateTime              @default(now())
   updatedAt     DateTime              @updatedAt
   executions    AutomationExecution[]
-  integration   InstagramIntegration  @relation(fields: [integrationId], references: [id], onDelete: Cascade)
+  user          User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@map("automations")
 }
