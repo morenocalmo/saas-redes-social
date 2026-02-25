@@ -147,11 +147,103 @@ async function handleCommentEvent(value: any) {
  * Handle message (DM) event
  */
 async function handleMessageEvent(value: any) {
-    console.log('Message event:', value)
+    console.log('Message event:', JSON.stringify(value, null, 2))
 
-    // TODO: Find matching automation
-    // TODO: Execute automation flow
-    // TODO: Log execution
+    try {
+        const prisma = (await import('@/lib/db')).prisma
+
+        // The value array usually contains one or more messaging events
+        for (const messageData of value?.messages || []) {
+            const senderId = messageData?.sender?.id
+            const recipientId = messageData?.recipient?.id
+            const messageText = messageData?.message?.text?.toLowerCase()
+
+            if (!senderId || !recipientId || !messageText) continue
+
+            // 1. Get the Integration for this Instagram Page
+            const integration = await prisma.instagramIntegration.findFirst({
+                where: { instagramUserId: recipientId },
+                include: {
+                    automations: {
+                        where: { isActive: true, trigger: "DM_KEYWORD" } // Only get active Keyword automations
+                    }
+                }
+            })
+
+            if (!integration || !integration.accessToken) {
+                console.log(`No active integration found for Instagram Page ID: ${recipientId}`)
+                continue
+            }
+
+            // 2. Find matching automation based on the 'flowData' linear keywords
+            let matchedAutomation = null
+
+            for (const automation of integration.automations) {
+                if (!automation.flowData) continue
+
+                try {
+                    const flowData = typeof automation.flowData === 'string'
+                        ? JSON.parse(automation.flowData)
+                        : automation.flowData
+
+                    if (flowData.type === 'linear' && Array.isArray(flowData.keywords)) {
+                        // Check if the incoming message contains ANY of the keywords
+                        const hasMatch = flowData.keywords.some((keyword: string) =>
+                            messageText.includes(keyword.toLowerCase().trim())
+                        )
+
+                        if (hasMatch) {
+                            matchedAutomation = { automation, flowData }
+                            break // Stop at the first matched automation
+                        }
+                    }
+                } catch (e) {
+                    console.error(`Error parsing flowData for automation ${automation.id}:`, e)
+                }
+            }
+
+            if (!matchedAutomation) {
+                console.log(`No matching keyword found for message: "${messageText}"`)
+                continue
+            }
+
+            console.log(`Matched Automation: ${matchedAutomation.automation.name}`)
+
+            // 3. Construct the response payload
+            const responseData = matchedAutomation.flowData
+
+            let responsePayload: any = {
+                recipient: { id: senderId },
+                message: { text: responseData.responseMessage || "Aqui está o link solicitado!" }
+            }
+
+            // If a link was provided, append it to the message or use a button (Template)
+            if (responseData.responseLink) {
+                // For Instagram DMs, standard text with link works best
+                responsePayload.message.text += `\n\n${responseData.responseLink}`
+            }
+
+            // 4. Send the message via Graph API
+            const axios = (await import('axios')).default
+
+            try {
+                await axios.post(
+                    `https://graph.facebook.com/v19.0/me/messages`,
+                    responsePayload,
+                    {
+                        params: {
+                            access_token: integration.accessToken
+                        }
+                    }
+                )
+                console.log(`Successfully sent automated reply to ${senderId}`)
+            } catch (err: any) {
+                console.error(`Error sending message via Graph API:`, err?.response?.data || err.message)
+            }
+        }
+    } catch (error) {
+        console.error('Fatal Error processing message event:', error)
+    }
 }
 
 /**
@@ -159,8 +251,4 @@ async function handleMessageEvent(value: any) {
  */
 async function handleMentionEvent(value: any) {
     console.log('Mention event:', value)
-
-    // TODO: Find matching automation
-    // TODO: Execute automation flow
-    // TODO: Log execution
 }
