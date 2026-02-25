@@ -26,7 +26,6 @@ model User {
   materials             Material[]
   subscription          Subscription?
   videoMaterials        VideoMaterial[]
-  automations           Automation[]
 
   @@map("users")
 }
@@ -94,32 +93,4 @@ model Subscription {
   user                 User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@map("subscriptions")
-}
-
-model Automation {
-  id            String                @id @default(cuid())
-  userId        String
-  name          String
-  trigger       String
-  isActive      Boolean               @default(true)
-  flowData      Json
-  createdAt     DateTime              @default(now())
-  updatedAt     DateTime              @updatedAt
-  executions    AutomationExecution[]
-  user          User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@map("automations")
-}
-
-model AutomationExecution {
-  id           String     @id @default(cuid())
-  automationId String
-  triggeredBy  String
-  triggerData  Json
-  status       String
-  errorMessage String?
-  executedAt   DateTime   @default(now())
-  automation   Automation @relation(fields: [automationId], references: [id], onDelete: Cascade)
-
-  @@map("automation_executions")
 }
