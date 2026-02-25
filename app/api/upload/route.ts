@@ -1,7 +1,4 @@
 import { NextRequest, NextResponse } from "next/server"
-import { writeFile, mkdir } from "fs/promises"
-import { join } from "path"
-import { existsSync } from "fs"
 
 export async function POST(request: NextRequest) {
     try {
@@ -12,28 +9,55 @@ export async function POST(request: NextRequest) {
             return NextResponse.json({ error: "Nenhum arquivo enviado" }, { status: 400 })
         }
 
-        // Create uploads directory if it doesn't exist
-        const uploadsDir = join(process.cwd(), "public", "uploads")
-        if (!existsSync(uploadsDir)) {
-            await mkdir(uploadsDir, { recursive: true })
+        // Obter credenciais do Supabase
+        const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+        const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+        if (!supabaseUrl || !supabaseKey) {
+            console.error("Credenciais do Supabase ausentes no .env")
+            return NextResponse.json({ error: "Configuração de storage ausente no servidor" }, { status: 500 })
         }
 
-        // Generate unique filename
-        const timestamp = Date.now()
-        const filename = `${timestamp}-${file.name.replace(/\s/g, "-")}`
-        const filepath = join(uploadsDir, filename)
-
-        // Convert file to buffer and save
+        // Converter arquivo
         const bytes = await file.arrayBuffer()
         const buffer = Buffer.from(bytes)
-        await writeFile(filepath, buffer)
 
-        // Return public URL
-        const fileUrl = `/uploads/${filename}`
+        // Gerar nome único
+        const timestamp = Date.now()
+        const filename = `${timestamp}-${file.name.replace(/[^a-zA-Z0-9.-]/g, "_")}`
+
+        // Fazer upload direto para o Supabase Storage via REST API (sem precisar do SDK)
+        const bucketName = "materials"
+        const uploadUrl = `${supabaseUrl}/storage/v1/object/${bucketName}/${filename}`
+
+        const uploadResponse = await fetch(uploadUrl, {
+            method: "POST",
+            headers: {
+                "Authorization": `Bearer ${supabaseKey}`,
+                "Content-Type": file.type || "application/octet-stream",
+            },
+            body: buffer
+        })
+
+        if (!uploadResponse.ok) {
+            const errorText = await uploadResponse.text()
+            console.error("Erro no Supabase Storage:", uploadResponse.status, errorText)
+
+            if (errorText.includes("Bucket not found") || errorText.includes("does not exist")) {
+                return NextResponse.json({
+                    error: "O bucket 'materials' não foi criado no Supabase. Crie-o primeiro no painel!"
+                }, { status: 500 })
+            }
+
+            return NextResponse.json({ error: "Erro ao fazer upload na nuvem" }, { status: 500 })
+        }
+
+        // Retornar a URL pública do arquivo
+        const fileUrl = `${supabaseUrl}/storage/v1/object/public/${bucketName}/${filename}`
 
         return NextResponse.json({ fileUrl })
     } catch (error) {
         console.error("Upload error:", error)
-        return NextResponse.json({ error: "Erro ao fazer upload" }, { status: 500 })
+        return NextResponse.json({ error: "Erro interno ao processar upload" }, { status: 500 })
     }
 }
