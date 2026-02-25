@@ -40,7 +40,6 @@ export default function DashboardLayout({ children, user }: DashboardLayoutProps
         { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
         { name: "Materiais", href: "/materials", icon: FileText },
         { name: "Verificações", href: "/verifications", icon: CheckSquare },
-        { name: "Automação", href: "/automation", icon: Zap },
         { name: "Configurações", href: "/settings/profile", icon: Settings },
         { name: "Assinatura", href: "/subscription", icon: CreditCard },
     ]
