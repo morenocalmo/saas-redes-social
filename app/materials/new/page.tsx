@@ -46,7 +46,8 @@ export default function NewMaterialPage() {
             })
 
             if (!uploadResponse.ok) {
-                throw new Error("Erro ao fazer upload do arquivo")
+                const errData = await uploadResponse.json().catch(() => ({}));
+                throw new Error(errData.error || "Erro ao fazer upload do arquivo");
             }
 
             const { fileUrl } = await uploadResponse.json()
@@ -68,8 +69,8 @@ export default function NewMaterialPage() {
                 const data = await response.json()
                 alert(data.error || "Erro ao criar material")
             }
-        } catch (error) {
-            alert("Erro ao processar requisição")
+        } catch (error: any) {
+            alert(error.message || "Erro ao processar requisição")
         } finally {
             setIsLoading(false)
         }

@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
                 }, { status: 500 })
             }
 
-            return NextResponse.json({ error: "Erro ao fazer upload na nuvem" }, { status: 500 })
+            return NextResponse.json({ error: `Erro Supabase (${uploadResponse.status}): ${errorText}` }, { status: 500 })
         }
 
         // Retornar a URL pública do arquivo
